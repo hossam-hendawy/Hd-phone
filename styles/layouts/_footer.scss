@@ -1,0 +1,114 @@
+footer {
+  background-color: $neutral-color;
+  padding: 77px 0 27px;
+  position: relative;
+  box-shadow: 6px 10px 38px rgba(0, 0, 0, 0.16);
+  @media (max-width: 874.98px) {
+    padding: 50px 0 20px;
+  }
+  
+  .footer-image {
+    position: absolute;
+    width: 512px;
+    height: 434px;
+    top: 0;
+    left: 89px;
+    @media (max-width: 575.98px) {
+      left: 0;
+      width: 575px;
+      height: 100%;
+    }
+    @media (max-width: 400px) {
+      width: 350px;
+    }
+    
+  }
+  
+  section.footer-content {
+    .container {
+      position: relative;
+    }
+    
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    h4 {
+      color: $hover-color;
+      font-size: 19px;
+      font-weight: 500;
+      line-height: 42px;
+      transition: color 400ms ease-in-out;
+      cursor: pointer;
+      width: auto;
+      margin-bottom: 10px;
+      @media (max-width: 575.98px) {
+        margin-bottom: 0;
+      }
+    }
+    
+    p {
+      width: 276px;
+      color: $footer-color;
+      font-family: $roboto;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 30px;
+      margin-bottom: 30px;
+    }
+    
+    .contact, .company, .phone, .address {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      @media (max-width: 1023.98px) {
+        margin-bottom: 30px;
+      }
+      
+      @media (max-width: 575.98px) {
+        text-align: center;
+        align-items: center;
+      }
+      
+      .text {
+        color: $footer-color;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 30px;
+        
+        &:not(:last-child) {
+          margin-bottom: 6px;
+        }
+      }
+      
+    }
+    
+  }
+  
+  .copy {
+    width: 100%;
+    text-align: center;
+    color: $footer-color;
+    font-family: $roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 100px;
+    
+    span {
+      color: $hover-color;
+    }
+    
+    @media (max-width: 1023.98px) {
+      margin-top: 30px;
+    }
+    @media (max-width: 400px) {
+      margin-top: 0;
+    }
+    
+  }
+}
+
+
